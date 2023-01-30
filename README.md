@@ -1,1 +1,1 @@
-# git-training
+# DIL Git and GitHub training
