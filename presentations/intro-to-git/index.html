@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>dil</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dil.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+						
+						<div id="left">
+							<img src="img/DIL_logo_safespace_RGBFull Color.svg" alt="DIL logo" width="400">
+						</div>
+												
+						# Intro to Git
+						February 6, 2023
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>						
+						## Housekeeping
+						- Share your GitHub handle with Luiza
+						- Go to [https://github.com/DevInnovationLab](https://github.com/DevInnovationLab) to accept the invitation to join the organization
+						- Install [GitHub desktop](https://desktop.github.com/)
+					</textarea>
+				</section>
+
+				<section data-background="#80001E">
+					<h2>Introduction</h2>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>		
+						## Why are we here?
+						To learn how to **track changes** and **collaborate** on **code** 
+					</textarea>
+				</section>
+
+				<section>
+					<h2>What is git?</h2>
+					<ul>
+						<li>Git is a version control system</li>
+						<li>It takes snapshots of the files in a folder</li>
+						<li class="fragment fade-in">It was designed to track changes to plain text files</li>
+						<li class="fragment fade-in">It also stores metadata about the changes, such as who made them, when they were, and, if used correctly, why they were made</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is GitHub?</h2>
+					<ul>
+						<li>GitHub is a cloud-based hosting service for git</li>
+						<div class="fragment fade-in">
+							<li>There are many other hosting services, such as GitLab and BitBucket</li>
+							<li>You can think of these services and being to git what GMail, Outlook and Hotmail are to e-mails</li>
+							<li>GitHub became the most popular git hosting service because of its collaboration features</li>
+						</div>
+					</ul>
+				</section>
+
+				<section data-background="#80001E">
+					<h2>Git repositories</h2>
+				</section>
+
+				<section>
+					<h2>Repository</h2>
+					<ul>
+						<li>Git takes snapshots of the files in a folder</li>
+						<li>We call the folder a <em>repository</em> or <em>repo</em></li>
+						<li class="fragment fade-in">There is a copy of this folder in the cloud, which we call the <em>origin</em></li>
+						<li class="fragment fade-in">And we can create local copies in our computers by <em>cloning</em> repositories</li>
+					</ul>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>		
+						## Repository
+						We will work on this repository today: https://github.com/DevInnovationLab/git-training
+					</textarea>
+				</section>
+
+				<section>
+					<h2>Cloning a repository</h2>
+
+					<ol>
+						<li>Open the repository on your web browser</li>
+						<li>Click on the green <b><code>Code</code></b> button</li>
+						<li>Select <b><code>Open with GitHub desktop</code></b></li>
+						<li>If prompted, click on <b><code>Open GitHub desktop</code></b></li>
+					</ol>
+					
+					<div class="highlight">
+						<p class="fragment fade-in">
+							This should launch GitHub Desktop 
+						</p>
+					</div>
+							
+					</textarea>
+				</section>
+
+				<section>
+					<h2>Working on a local repo</h2>
+
+					<ol>
+						<li>On the top left corner, click onn <b><code>Current repository - git-training</code></b></li>
+						<li>On the dropdown menu, right click on <b><code>git-training</code></b></li>
+						<li>Click on <b><code>Show in Explorer</code></b> or <b><code>Show in Finder</code></b></li>
+					</ol>
+					
+					<div class="highlight">
+						<p class="fragment fade-in">
+							What do you see in this folder? How does it compare to the content you see in the browser?
+						</p>
+					</div>
+				</section>
+
+				<section data-background="#80001E">
+					<h2>Fetching and pulling</h2>
+				</section>
+				
+				<section>
+					<h2>Fetching and pulling</h2>
+
+					<ul>
+						<li>When we work with file sharing software, they are constantly syncing files between the cloud and our computers</li>
+						<li>In git, however, every action is intentional, including checking if there are changes in the cloud and syncing them to your computer</li>
+					</ul>
+					
+					<div class="highlight">
+						<p class="fragment fade-in">
+							What does that mean? Let's do a test.
+						</p>
+					</div>
+						
+				</section>
+
+				<section>
+					<h2>Fetching and pulling</h2>
+					<ol>
+						<li>Open the repository in your browser and make an edit to the README.md file</li>
+						<li>When prompted, commit your changes</li>
+					</ol>
+
+					<div class="highlight">
+						<p class="fragment fade-in">
+							Do you see your changes in the browser now? Do you see them in your local copy of this file?
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Fetching and pulling</h2>
+				
+					<ol>
+						<li>On GitHub Desktop, click on the button that says <code><b>Fetch origin</b></code></li>
+						<li>Click on <code><b>Pull origin</b></code></li>
+						<li>Open the local copy of <em>README.md</em> again</li>
+					</ol>					
+
+					<div class="highlight">
+						<p class="fragment fade-in">
+							Do you see the changes now?
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Fetching and pulling</h2>
+				
+					<ul>
+						<li>"Fetching" means syncing with the cloud and checking if there are any updates in the repository</li>
+						<li>"Pulling" means bringing any changes present in the origin into your local copy</li>
+					</ul>							
+				</section>
+
+				<section data-background="#80001E">
+					<h2>Commits</h2>
+				</section>
+				
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Commits
+							
+							- Git takes snapshots of the files in a folder
+							- Each snapshot is called a <em>commit</em>
+							- When we made changes to the repo online, we did it through a commit
+						</textarea>
+					</section>
+	
+					<section data-markdown>
+						<textarea data-template>
+							## Commits
+	
+							To see a list of all changes ever made to this repository
+							- Look at the *History* tab on GitHub Desktop,
+							- Click on the number of commits shown in the repository's landing page, or
+							- Look at the network graph on the browser.
+							
+						</textarea>
+					</section>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Commits
+				
+						Apart from the content changes, each commit contains a commit message and other metadata, including 
+						- The author of the changes
+						- The time when they were made
+						- A commit hash
+					</textarea>
+				</section>
+
+				<section>
+					<h2>Making commits locally</h2>
+
+					<ol>
+						<li>Create a new file inside your local copy of the repository</li>
+						<li>Go to GitHub desktop</li>
+					</ol>
+
+					<div class="highlight">
+						<p class="fragment fade-in">
+							Can you see what changes you made?
+						</p>
+					</div>
+
+				</section>
+
+				<section>
+					<h2>Making commits locally</h2>
+
+					<ol>
+						<li>Write a commit message to describe your changes under <code><b>Summary (required)</b></code></li>
+						<li>Click on <code><b>Commit to main</b></code></li>
+						<div class="fragment fade-in">
+							<li>Go to the <em>History</em> tab. Can you see your commit there?</li>
+							<li >Now go to the browser. Can you see your changes there?</li>
+						</div>
+					</ol>
+				</section>
+	
+				<section data-background="#80001E">
+					<h2>Pushing changes</h2>
+				</section>
+				
+				<section>
+					<h2>Pushing changes</h2>
+
+					<ul>
+						<li>Remember that every action in git is intentional</li>
+						<li>To send changes from your computer to the cloud, you need to <em>push</em> them</li>
+						<li>"Pushing" means sending your changes to the cloud</li>
+					</ul>
+
+					<p>
+						<ol>
+							<li class="fragment fade-in">On GitHub Desktop, click on <code><b>Push origin</b></code></li>
+						</ol>
+					</p>
+
+					<div class="highlight">
+						<p class="fragment fade-in">
+							Can you see your changes in the browser now?
+						</p>
+					</div>
+				</section>
+	
+				<section data-background="#80001E">
+					<h2>Branches</h2>
+				</section>
+					
+				<section data-markdown>
+					<textarea data-template>
+						
+						## Branches
+						
+						- When you commited your changes locally, you clicked on a button that said <code><b>Commit to main</b></code>
+						- "main" here represents a *branch*
+						- Branches are parallel copies of the files in a repository
+						- They allow us to work on different versions
+
+						---
+						
+						## Why branches?
+						
+						- Branches are used to test changes to your code when you are not sure about whether you want them to be permanent or not
+						- They also help avoid onflicts when different team members are working on the same file
+						- Working on branches also prevents you from making changes that will break your teammate's code
+
+					</textarea>
+				</section>
+				
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Creating a new branch on GitHub Desktop
+							
+							1. Click on <code><b>Current branch: main</b></code>
+							1. Write your name in the search bar
+							1. Click on <code><b>Create new branch</b></code>
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							## Creating a new branch on the browser
+							
+							1. Click on <code><b>main</b></code> in the top left corner under the main repository menu
+							1. Write your name in the search bar
+							1. Click on <code><b>Create branch</b></code>
+							1. Go to GitHub Desktop
+							1. Fetch changes from the origin
+							1. Click on <code><b>Current branch: main</b></code>
+							1. Select the branch with your name in it
+						</textarea>
+					</section>
+
+				</section>
+	
+				<section data-background="#80001E">
+					<h2>Let's practice</h2>
+				</section>
+				
+				<section>
+
+					<section data-markdown>
+						<textarea data-template>
+							<h2>Workflow</h2>
+
+							<ol>
+								<li>Find the lyrics to your favorite song and save it in a new .txt file inside the lyrics folder</li>
+								<li>Go to GitHub Desktop and commit your changes</li>
+								<li>Make a change in the file you just added and save it</li>
+								<li>Go to GitHub Desktop and ommit your changes</li>
+								<li>When you are done, push your changes to the cloud</li>
+							</ol>
+
+							<div class="highlight">
+								<p class="fragment fade-in">
+									Note that the only change is the workflow is to commit your work after saving it
+								</p>
+							</div>
+						</textarea>
+					</section>
+	
+					<section data-background="#80001E">
+						<h2>Command line git</h2>
+					</section>
+					
+					<section data-markdown>
+						<textarea data-template>
+							## Basic git commands
+							
+							- `git clone`
+							- `git fetch`
+							- `git pull`
+							- `git checkout`
+							- `git status`
+							- `git add`
+							- `git commit`
+							- `git push`
+						</textarea>
+					</section>
+				</section>				
+
+				<section data-background="#80001E">
+					<h2>Merging branches</h2>
+				</section>
+				
+				<section data-markdown>
+					<textarea data-template>
+						## Basic concepts: merge
+						- Branches are a way to maintain two separate workstreams
+						- But eventually you will want to combine them
+						- This is done through *merges*
+						- The easiest way to merge branches is to use GitHub's *Pull Request* feature
+						---
+						## Opening a pull request
+						1. Go to the repository's page on the browser
+						2. Click on **`Pull requests`**  on the repository's main menu
+						3. Click on the green button saying **`New pull request`** 
+						4. Select **`main`** as the base branch (the one where changes will be brought to)
+						5. Select your branch as the compare branch (the one where changes will be brought from)
+						6. Click on **`Create pull request`**
+					</textarea>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Merging branches
+							1. Go to the repository's page on the browser
+							2. Click on **`Pull requests`** on the repository's main menu
+							3. Select an open pull request
+							4. Click on **`Merge pull request`**
+							5. (Good practice, but not mandatory) Delete the branch you just merged
+
+							[Suggestion for organizing branches and collaboration on GitHub](https://github.com/DevInnovationLab/dil-template-repo/blob/main/CONTRIBUTING.md#workflow)
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+
+							<h2>Merge conflicts</h2>
+
+							<ul>
+								<li>Merge conflict occur when two people are editing the same line of a file</li>
+								<li class="fragment fade-in">To avoid merge conflicts
+									<ol>
+										<li>Work on different branches than your teammates</li>
+										<li>Pull changes from the origin before starting to make changes</li>
+										<li>Push your changes to the origin often</li>
+									</ol>
+								</li>
+							</ul>
+
+							<div class="highlight">
+								<p class="fragment fade-in">
+									If you see a merge conflict, don't panic!
+								</p>
+							</div>
+						</textarea>
+					</section>
+				</section>
+
+				<section data-background="#80001E">
+					<h2>Recap</h2>
+				</section>
+				
+				<section data-markdown>
+					<textarea data-template>
+						## Recap
+						- Git takes snapshots (commits) of files in a folder (repository)
+						- It makes it very easy to switch between versions of your files (branches)
+						- It makes it very difficult to break anything permanently
+						- The main change to your usual workflow is committing changes once you save them
+					  </textarea>
+				  </section>
+
+				  <section data-markdown>
+					<textarea data-template>
+						## There's more
+						
+						- Today we talked about *Git* and how it can be used to **track changes** to (plain text) files
+						- But GitHub also offers great collaboration features
+						- Join the Pull Request session on the 16 to learn more them
+					</textarea>
+				  </section>
+
+				  <section data-background="#faa319">
+					<h2>
+						<span class="white">
+							Thank you!
+						</span>
+					</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
