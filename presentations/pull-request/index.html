@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Into to Git</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dil.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template >
+						
+						<div id="left">
+							<img src="img/DIL_logo_safespace_RGBFull Color.svg" alt="DIL logo" width="400">
+						</div>
+												
+						# Code review
+						February 15, 2023
+
+					</textarea>
+				</section>
+
+				<section data-background="#80001E">
+					<h2>Introduction</h2>
+				</section>
+
+				<section data-markdown data-separator-notes="^Note:">
+					<textarea data-template>
+						## Why do code review?
+
+						<ul>
+							<li class="fragment fade-in">To share knowledge</li>
+							<li class="fragment fade-in">To create familiarity with the code base inside a team</li>
+							<li class="fragment fade-in">To improve code reproducibility and transferrability</li>
+							<li class="fragment fade-in">For some peace of mind</li>
+							<li class="fragment fade-in">To catch bugs</li>
+						</ul>
+
+						Note:
+						- Learn by reading other people's code
+						- You will need to create a reproducibility package at the end of a project or to hand it over. Reviewing code periodically is a way to make sure this is not an overwhelming task
+						- RPs are often the only person looking at the code for a project, which can be a lot of responsibility
+						- Mention some horror stories 
+						- It may seem like a very time-consuming task, but it will save you time in the long run, specially if you do it often
+						---
+						## How to do code review?
+
+						- The code author shares a piece of code with the reviewer
+						  - For today, choose a script that is as auto-contained as possible, and short enough that someone can understand what it is doing by the end of this session
+						- The reviewer reads *every line* of the code and provides feedback
+						  - [What to look for when reviewing code](https://devinnovationlab.github.io/guides/templates/code-review.html)
+						  - [A code of conduct for code review](https://github.com/thoughtbot/guides/tree/main/code-review)
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
