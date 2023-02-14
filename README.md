@@ -13,6 +13,7 @@ This session introduces basic concepts of git such as commits, repositories, and
 
 This session introduces GitHub features for collaboration such as issues and pull requests.
 
+- [View presentation](https://raw.githack.com/DevInnovationLab/git-training/main/presentations/pull-request/index.html)
 
 ---
 
