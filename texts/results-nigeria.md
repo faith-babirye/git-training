@@ -1,0 +1,1 @@
+Exam scores only improved by 2 percentage points in region 1 but improved by 4 percentage points in both regions 2 and 3. These are promising short term results that demonstrate that this type of program increases test scores for students in Nigeria. 

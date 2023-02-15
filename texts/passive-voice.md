@@ -1,0 +1,5 @@
+- The teachers are trained by mentors.
+- The outcomes are measured by a survey. 
+- The exam has been administered to two thousand students. 
+- The baseline has been the focus of this week.
+- Many activities were planned.
