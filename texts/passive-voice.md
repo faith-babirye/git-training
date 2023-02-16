@@ -1,5 +1,5 @@
-- The teachers are trained by mentors.
-- The outcomes are measured by a survey. 
-- The exam has been administered to two thousand students. 
-- The baseline has been the focus of this week.
-- Many activities were planned.
+- Mentors trained teachers.
+- We measured outcomes through a survey. 
+- We administered the exam to two thousand students. 
+- The team focused on the baseline this week.
+- We planned many activities.
