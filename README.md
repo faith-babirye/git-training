@@ -19,3 +19,4 @@ This session introduces GitHub features for collaboration such as issues and pul
 ---
 
 HTML presentations were created using [reveal.js](https://github.com/hakimel/reveal.js/)
+faith
